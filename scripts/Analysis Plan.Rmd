@@ -127,7 +127,7 @@ data %>%
   mutate_if(is.integer, as.numeric) %>% 
   select_if(is.numeric) %>% 
   gather() %>% 
-  ggplot(aes(value)) +
+
     facet_wrap(~ key, scales = "free") +
     geom_boxplot()+
     theme_minimal()
