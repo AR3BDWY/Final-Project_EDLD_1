@@ -133,6 +133,8 @@ data %>%
     theme_minimal()
 
 kable(describe(data))
+
+names(data)
 ```
 
 Cases with values beyond those in the coding system mentioned above for every item will be eliminated. Those cases with missing values will also be eliminated to keep the analysis simple. 
